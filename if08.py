@@ -11,4 +11,14 @@ def main(a):
     Returns:
         string: the message to print
     """
-    return
+    if a//10>=1 and a%2==1:
+        x="two-digit odd number"
+    if a//10>=1 and a%2==0:
+        x="two-digit even number"
+    if a//100>=1 and a%2==1:
+        x="three-digit odd number"
+    if a//100>=1 and a%2==0:
+        x="three-digit even number"
+    return x
+a=int(input("a="))
+print(main(a))
